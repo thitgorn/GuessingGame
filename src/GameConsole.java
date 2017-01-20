@@ -27,10 +27,9 @@ public class GameConsole {
 		while (!game.guess(number)) {
 			System.out.print(prompt);
 			number = scan.nextInt();
+			game.guess(number);
 			System.out.println(game.getHint());
 		}
-
-		System.out.println(game.getHint());
 		return number;
 	}
 }
