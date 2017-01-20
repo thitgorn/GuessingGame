@@ -29,6 +29,7 @@ public class GameConsole {
 			number = scan.nextInt();
 		}
 		System.out.println(game.getHint());
+		System.out.println("You used " + game.getCount() + " gusses.");
 		return number;
 	}
 }

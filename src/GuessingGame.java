@@ -13,6 +13,7 @@ public class GuessingGame {
 	private int upperBound;
 	private int secret;
 	private String hint;
+	private int count = 0;
 
 	/**
 	 * Initialize a new game.
@@ -55,6 +56,7 @@ public class GuessingGame {
 		} else if (number < secret && number != Integer.MIN_VALUE) {
 			setHint("Sorry , too small");
 		}
+		count++;
 		return false;
 	}
 
@@ -75,6 +77,13 @@ public class GuessingGame {
 	 */
 	protected void setHint(String hint) {
 		this.hint = hint;
+	}
+	/**
+	 * get how many user used to count
+	 * @return number of count
+	 */
+	public int getCount() {
+		return count;
 	}
 
 }
