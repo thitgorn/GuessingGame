@@ -22,14 +22,12 @@ public class GameConsole {
 		String prompt = "Your guess? ";
 
 		System.out.println(title);
+		System.out.println(game.getHint());
 		int number = 0;
-		while (true) {
-			System.out.println(game.getHint());
+		while (!game.guess(number)) {
 			System.out.print(prompt);
 			number = scan.nextInt();
-			if(game.guess(number)){
-				break;
-			}
+			System.out.println(game.getHint());
 		}
 
 		System.out.println(game.getHint());
