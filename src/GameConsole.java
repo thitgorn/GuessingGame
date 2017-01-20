@@ -4,12 +4,12 @@ import java.util.Scanner;
  * GameConsole UI for Guessing Game.
  * 
  * @author Thitiwat Thongbor
- * @version 2017.01.20
+ * @version 2017.01.21
  */
 public class GameConsole {
 
 	/**
-	 * The play method plays a game using input from a user.
+	 * play a game guessing number between 1 and Bound.
 	 * 
 	 * @param game
 	 *            is the GuessingGame with the bound

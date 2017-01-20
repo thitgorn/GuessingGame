@@ -1,10 +1,10 @@
 import java.util.Random;
 
 /**
- * Game of guessing a secret number
+ * Game of guessing a secret number.
  * 
  * @author Thitiwat Thongbor
- * @version 2017.01.20
+ * @version 2017.01.21
  */
 public class GuessingGame {
 
@@ -78,8 +78,10 @@ public class GuessingGame {
 	protected void setHint(String hint) {
 		this.hint = hint;
 	}
+
 	/**
 	 * get how many user used to count
+	 * 
 	 * @return number of count
 	 */
 	public int getCount() {

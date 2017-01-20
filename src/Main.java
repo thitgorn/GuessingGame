@@ -1,8 +1,8 @@
 /**
- * Main class for playing GuessingGame
+ * Application for Playing GuessingGame.
  * 
  * @author Thitiwat Thongbor
- * @version 2017.01.20
+ * @version 2017.01.21
  */
 public class Main {
 	/** create objects and start the game */
