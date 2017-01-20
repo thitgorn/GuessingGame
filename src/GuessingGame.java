@@ -52,7 +52,7 @@ public class GuessingGame {
 			return true;
 		} else if (number > secret) {
 			setHint("Sorry , too large.");
-		} else {
+		} else if (number < secret && number != Integer.MIN_VALUE) {
 			setHint("Sorry , too small");
 		}
 		return false;
