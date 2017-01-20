@@ -1,6 +1,7 @@
 /**
  * Main class for playing GuessingGame
- * @author thitiwat
+ * 
+ * @author Thitiwat Thongbor
  * @version 2017.01.20
  */
 public class Main {

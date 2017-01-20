@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * GameConsole UI for Guessing Game.
  * 
- * @author thitiwat
+ * @author Thitiwat Thongbor
  * @version 2017.01.20
  */
 public class GameConsole {
