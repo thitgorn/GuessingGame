@@ -1,6 +1,5 @@
-Guessing game with object
+Guessing game
 
-*all of the source files are in src/
 
-5910546384
-Thitiwat Thongbor
+Student id : 5910546384
+Student name : Thitiwat Thongbor
