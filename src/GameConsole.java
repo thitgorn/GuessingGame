@@ -13,7 +13,7 @@ public class GameConsole {
 	 * 
 	 * @param game
 	 *            is the GuessingGame with the bound
-	 * @return the secret number if the answer is right
+	 * @return the secret number that is right
 	 */
 	public int play(GuessingGame game) {
 		Scanner scan = new Scanner(System.in);
@@ -22,12 +22,13 @@ public class GameConsole {
 		String prompt = "Your guess? ";
 
 		System.out.println(title);
-		int number = Integer.MIN_VALUE;
-		while (!game.guess(number)) {
+		int number = 0;
+		do {
 			System.out.println(game.getHint());
 			System.out.print(prompt);
 			number = scan.nextInt();
-		}
+		} while (!game.guess(number));
+
 		System.out.println(game.getHint());
 		System.out.println("You used " + game.getCount() + " gusses.");
 		return number;

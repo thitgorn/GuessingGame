@@ -48,15 +48,16 @@ public class GuessingGame {
 	 * @return the answer that is match with the secret number or not
 	 */
 	public boolean guess(int number) {
+		count++; // when player type the number it's already counted.
+
 		if (number == secret) {
 			setHint("Right! The secret is " + secret);
 			return true;
 		} else if (number > secret) {
 			setHint("Sorry , too large.");
-		} else if (number < secret && number != Integer.MIN_VALUE) {
+		} else if (number < secret) {
 			setHint("Sorry , too small");
 		}
-		count++;
 		return false;
 	}
 
