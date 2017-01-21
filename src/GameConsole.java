@@ -30,7 +30,6 @@ public class GameConsole {
 		} while (!game.guess(number));
 
 		System.out.println(game.getHint());
-		System.out.println("You used " + game.getCount() + " gusses.");
 		return number;
 	}
 }

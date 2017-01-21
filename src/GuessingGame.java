@@ -51,7 +51,7 @@ public class GuessingGame {
 		count++; // when player type the number it's already counted.
 
 		if (number == secret) {
-			setHint("Right! The secret is " + secret);
+			setHint("Right! The secret is " + secret + ".\nYou used " + this.getCount() + " gusses.");
 			return true;
 		} else if (number > secret) {
 			setHint("Sorry , too large.");
