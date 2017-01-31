@@ -22,7 +22,6 @@ public class GuessingGame {
 	 *            is the max value for the secret number (>1).
 	 */
 	public GuessingGame(int upperBound) { // this is constructor
-
 		this.upperBound = upperBound;
 		secret = getRandomNumber(upperBound);
 		setHint("I'm thinking of a number between 1 and " + upperBound);
