@@ -30,6 +30,7 @@ public class GameConsole {
 		} while (!game.guess(number));
 
 		System.out.println(game.getHint());
+		scan.close();
 		return number;
 	}
 }
